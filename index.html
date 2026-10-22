@@ -1,0 +1,460 @@
+<!--yeh file bnti h server ko yeh batane 
+k liye ki jub wo user ki request pr home page render kre 
+toh wo page index.html naam ki he file ho-->
+
+<!DOCTYPE html> <!--DOCTYPE means document is of html5 type(Version)-->
+<html lang="en"> <!--html root ele hota h iske ander sub aata-->
+<head> <!-- yeh wo batata h jo web page pr display ni krna bs 
+    code ko pata honi chahiye, yeh meta data rakhti apne pr-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--yaha uper view port se website responsive bnti like 
+    devices k liye phone, laptop, tab...-->
+    <title>My first page</title> <!--yeh web site k tab mai dikhega URL k bhi uper browser mai-->
+</head>
+<body>
+    <header>
+    <pre><p>Education             experience</p></pre>
+    </header>
+    <main>
+        <section> <b>Text: </b>
+    <!--isme wo aata jo web pr display honi chahiye-->
+    <h1>Hello world!</h1>
+    <p>this is a paragraph</p> <!--isme <p></p> yeh opening 
+    and closing tags h aur inke ander ka content milake 
+    element hua [element=tag+content] 
+    
+    browser ka kaam h hume html code se render krwana
+    web page 
+
+    head aur body tag are the children of html tag
+
+    some html tags have no content in between eg <br> for break
+
+
+    jo bhi hum likhenge isme hum use web server se view page source se dekh skte
+
+    html is not case sensitive <HEAD>=<HeAd>=<head> sub understandable h unlike python,java languages
+
+    hypertext markup language =HTML and we re using version 5
+
+    Level2:
+
+    html mai tags k sath attributes bhi hote h
+
+    attributes: are used to add more info to the tag
+        eg: <html lang="en"> isme language =english likha h aur yeh attribute h html tag ka
+            Note: isme "en" ya 'en' dono valid h but by default double quotes he rehete h
+
+    
+    heading tag: yeh kaam aata h importance show krne k liye kisi heading ki
+        most imp: biggest size
+        least imp: smallest size
+        nichey use bata rakha h site pr go live se dekho
+
+        Note: isse kabhi bhi text ko big ya small krne ko mtt krna like h5 ya h6 use krne lg gye
+        toh wo galat h uska impact seo pr padhta h website achi ni bnegi ager faltu use
+        kroge <h> wale tag ka koe bhi number ko h k aage iss h ka use bs importance k liye krna 
+        koe heading ki bs uske alawa ni
+
+        size k liye text k font size krke ek attribute(property) hoti h usko use kro jub css 
+        padhenge usme milegi
+
+
+    paragraph tag: use it to make paragraphs in your website
+    nichey use kiya h
+
+    anchor tag: to add links to pages
+    nichey use kiya h
+
+    image tag: used to add images
+    nichey use kiya h
+
+    br tage: to add next line or line break to our page
+    use krte h <br> likhke
+
+    tags for formating:
+    1) <b> -> for bold
+    2) <i> -> for italic
+    3) <u> -> for underline
+    niche teeno use kiye h
+
+    hr tag: used to seperate diff sections
+
+    sub tag: subscript k liye like h2o
+    sup tag: superscript k liye like x raised to the power 2
+
+    pre tag: spaces ko consider krke website pr same rakhta h unlike <p> tag jo ignore krta tha
+
+    page Layout techniques:
+        1)using Semantic tags for layout(SEO mai helpful tags h ager sahi se likho and use kro toh)
+            using the Right Tags sequentially like:
+
+            1)<header>
+
+            2)<main>
+
+            3)<footer>
+        2) using non semantic tags for layout
+           <div>
+           <span>
+        nichey sub baari baari se bataya h aur pure body k ander sub maine aese he arrange kr diya ab mai apko aesi sites bhi dikhati hu pr smjhati header main aur footer kya kya hota h
+
+
+        ab main k ander bhi kafi divisions hote h like:
+            1)section tag: like experience,education,projects etc..(ab dekho maine sections banaye h uper se neechey pure main k ander)
+
+            2)Article tag: kisi cheez ki story likhna like kyu hum yeh likhre h, ya humara goal kya h kalko iss skill se hum kya krenge future mai india k liye etc..
+
+            3) Aside tag: for content aside main content like ads (google ads)...yeh use krte taki google bs main content ko read kre isme jo likhoge use SEO detect nahi krega
+        
+        revisiting anchor tag: new tab mai link open krni h ager koe toh use 
+        <a href="https://www.google.com/" target="_main">Google</a>
+        nichey use bhi kiya h 
+        ab yehi kaam image se bhi kr skte nichey h wo bhi
+        Note: height ya width mai se koe bhi ek set kr lenge dusri cheez khud set ho jayegi apne aspect ratio ko maintain krne k liye
+
+        Div tag: a container for other html elements,baki isme div ka khud koe kaam ni hota like header footer main tags toh isliye div ko non semantic bhi kehete h, aur isko block element bhi bolte h kyuki yeh full width ko le leta h iska opposite inline elements hote h jo jitni jagha chaiye bs wo he lete h so isse particularly he use kro faltu jagha lega div tag nichey use kiya h baki baadme inspect pr div tag pr jaake dekhlena yeh kaise widhth leta h jaise he iske ander kuch likho but ager kuch ni likhoge toh yeh 0 width leta inspect krke batati apko,div ka use tb hota jub ek sath bhut saare elements mai changes krne hote same chanages then hum unhe div ki help se group kr skte ek sath 
+
+        yeh kuch dive k jaise block elements h jo width lete h kafi yaha maine kuch he rakhe bs baki ap dekhna:
+        <address>
+        <article>
+        <aside>
+        <blockquote>
+        <canvas>
+        <dd>
+
+        Span Tag: jara si jagha 
+        Span is also a container used for other HTML elements
+        Inline Element (takes width as per size).
+        nichey bataya h
+
+        List : Span Tags
+        <a>
+        <abbr>
+        <acronym>
+        <b>
+        <bdo>
+        <big>
+        <br>
+        <button>
+        <cite>
+
+        
+        list: used to represent real life list data
+        1)ordered- <ol>
+        2)unordered -<ul>
+        Note: ap disc,triangle,square,a,b,c,...yeh sub way se likh skte ho MDN references pr jaake sikho baki sub..
+
+        Tables in HTML
+
+        Tables are used to represent real life table data.
+
+        <tr>:used to display table row
+
+        <td>:used to display table data
+
+        <th>:used to display table header
+
+        <caption>: kisi table ka topic batane ko use hota
+        
+        <thead>: to wrap table head
+
+        <tbody>: to wrap table body
+        
+        colspan="2" in second table it is used waha dekho it is used to merge 2 columns
+
+        Form in HTML:
+        Forms are used to collect data from the user
+        Eg- sign up/login/help requests/contact me
+        <form>
+
+        form content
+
+        </form>
+
+
+        Action in Form:
+        Action attribute is used to define what action needs to be
+        performed when a form is submitted
+        <form action="/action.php" > //yaha backend pr jayega 
+        humpe 2 option hote: ya toh java script ko dedo data jo submit hua ya fir wo php ki terha backend ko dedo (kyuki ager hum html ki jagha php se form banate toh wo backend ko he deta h user ka submitted info)
+.
+        <form action="/action.php" > -> yeh file humari check krti ki sari info logical h? like phone number mai kisi user ne abcd na dal rakha ho ya name mai koe number ya koe sepecial character na ho aur uska code iss action naam ki file mai hoga yehi bolra h yeh code line bs
+        
+
+        ab yeh nichey he jaake smjho pura:
+        type attribute in <input> tag wo text ho skta ya password
+        text mai text show hota h
+        password mai bullet points show krta original chupa leta 
+        
+
+        <div> tag: 
+            Class & Id
+
+            <div id="id1" class="group1">
+
+            </div>
+
+            <div id="id2" class="group1">
+
+            </div>
+        
+        checkbox: ager multiple cheeze select krni h toh radio button kaam ni aata isliye yeh h
+        type attribute k ander likhte h checkbox
+
+
+        Select: drop down k liye kaam aata
+        <select name="city" id="city">
+        <option value="Delhi"> Delhi </option>
+        <option value="Mumbai"> Delhi </option>
+        <option value="Banglore"> Delhi </option>
+        </select>
+        
+    -->
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+    <h6>H6</h6>
+
+    <!--     
+    Note <p></p> isme jo likha h wo nichey scroll krne wala lara h toh usse hatane k liye 
+    hum settings pr jayenge usse select krke pehele pura element and  command palatte 1st option pr click krke uper search pop up hoga usme toggle word wrap likho ya ager tumhe milra hoga direct toh thik h ni toh likhke kro search click it and yeh nichey ka scrol chala jayega -->
+    <p>sample paragraph sample paragraph sample paragraph sample paragraph sample paragraph sample paragraph sample paragraph</p>
+    
+    </section>
+    <section><b>Links:</b><br>
+    <!-- inke beechme <br> tag laga denge toh yeh link diff lines mai ayegi  -->
+    <a href="https://www.google.com/">Google</a>
+    <br>
+    <a href="https://code.visualstudio.com/download">Download vs code</a>
+    <!-- hum dusri file ko issi folder se he hello.html naam ki file mai kuch likhte h and usko bhi link krte h yaha  -->
+    <br>
+    <a href="/hello.html">Go to hello</a>
+    <!-- note: kisi dusri website ka link use krna hota h absolute link and kisi apne file ki link ko use krna hota h relative link 
+    Note ager yeh hello.html file kisi dusre folder k ander hoti toh hum "/foldername/filename.html" yeh likhte href k ander  -->
+    <br>
+    </section>
+    <br>
+    <section><b>Images:</b> <br>
+    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSMGET85a4edKaCqtIHlgeXhlZxkKwSNKwJbwY-PAH5VDLoHgiGCYo-NgiRYHOa_ddFgFGDRmayv-NCuaREzSBr5zTKipwcmRbouOI5csnXA_redfAyxNExHiWqXNmDNqpiHgsc&usqp=CAc" alt="notebook" />
+    <!-- note yaha ager hum link copy krte time kuch glti kr dete koe word ni likhte ya adha likhte toh wo user ko bs ek image dikhata but uss image mai koe info ni hoti ki wo thi konsi image toh usse info show krne k liye alt attribute ka use krte h ki yeh naam show krna ager image server down hone ya user ka net fast na chalne ya meri he glti se link mai koe mistake hone pr ager image show ni hui user ko toh at least ek info mile usse ki yeh image thi kaeki eg: here notebook show krega ager mai koe link mai mistake krke apko batati hu  
+     
+    baki dhyaan dena ki hum isse relative link ki help se bhi kr skte the but humne absolute link se kiya dono mai same he kaam hoga bs relative link k liye image download krke isse folder mai rakhdo ya isse folder k ander kisi folder mai and then uka naam rakho image.png eg and src="/image.png" bs yeh likho image dljayegi
+
+
+    height="500" width="500" yeh dono m se ek he likhna chahiye ager likhna he h img k tag k ander as an attribute toh but better h ki yeh kro he mtt size wagerah sub css dekhlega
+    -->
+    </section>
+
+    <br>
+    <b>Bold</b>
+    <br>
+    <i>Italic</i>
+    <br>
+    <u>Underlined</u>
+    <br>
+    <!--Note tag k ander tag likh skte h like: -->
+    <p><b>sample paragraph</b> sample paragraph <u>sample paragraph</u> sample paragraph <i>sample paragraph</i> sample paragraph sample paragraph</p>
+
+    <big>this text shows big text</big>
+    <small>this tag is small</small>
+    <br>
+    <!--Note ab hum ager iske beexh <hr> tag use krenge toh wo seperate kr dega big and small ko line ki help se-->
+
+    <big>this text shows big text</big>
+    <hr>
+    <small>this tag is small</small>
+    <hr>
+
+    <p>H<sub>2</sub>O</p>
+    <br>
+    <p>x<sup>2</sup></p>
+
+    <hr>
+    <pre>
+        Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Sit magni accusantium 
+            est eligendi quod, iure, in nemo mollitia 
+            fugit libero 
+        eveniet cum? Beatae unde odio aut facilis, 
+        nostrum voluptatem mollitia?
+    </pre>
+
+    <hr>
+    <br>
+    <a href="https://www.google.com/" target="_main">Google</a>
+    <br>
+    <a href="https://www.google.com/" target="_main"><img src="https://storage.googleapis.com/gd-prod/images/a910d418-7123-4bc4-aa3b-ef7e25e74ae6.faa49ab5e1fff880.webp" alt="google" height="100"> </a>
+    <br>
+    <hr>
+    <div></div> <!--ager bs itna likhenge toh 0 width-->
+    <div>hi reader</div>
+    <span></span>
+    <span>hey</span>
+
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>grapes</li>
+    </ul>
+    <hr>
+    <ul>
+        <li>Apple</li>
+        <ul>
+            <li>color: red</li>
+            <li>season: winter</li>
+        </ul>
+        <li>Banana</li>
+        <ul>
+            <li>color: yellow</li>
+            <li>season: all season</li>
+        </ul>
+        <li>grapes</li>
+        <ul>
+            <li>color: green</li>
+            <li>season: winter</li>
+        </ul>
+    </ul>
+    <hr>
+    <ol>
+        <li>Apple</li>
+        <ul>
+            <li>color: red</li>
+            <li>season: winter</li>
+        </ul>
+        <li>Banana</li>
+        <ul>
+            <li>color: yellow</li>
+            <li>season: all season</li>
+        </ul>
+        <li>grapes</li>
+        <ul>
+            <li>color: green</li>
+            <li>season: winter</li>
+        </ul>
+    </ol>
+    <hr>
+    <table>
+        <thead>
+        <caption>Student data</caption>
+        
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Isha</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Tanu</td>
+            <td>23</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table>
+        <thead>
+        <caption>Student data</caption>
+        
+        <tr>
+            <th colspan="2">Information </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Isha</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Tanu</td>
+            <td>23</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h4>Registration form</h4>
+    <form action="/action.php">
+        name <input type="text" placeholder="type something" >
+        <br> <br>
+        password <input type="password" placeholder="type something">
+        <br>
+        <br>
+        <!--isme label radio button k liye aur jin logo ko dekhne mai problem hoti h unke liye form mai kya bharna h ki voice mai info bolwane ko use hota label baki humne yaha radio wala use kiya label ka isme value mai wo likhte h jo backend pr data jayega and name="class" mai same cheeze likhte h jo choose krne k liye ho 4 cheeze eg ager toh subme name ki value same he likhni hogi tb unme se ek ko he select kr skte h subko ni  fir koe aur next cheezo k liye radio mai name="first" eg yeh likhdiya fir unme se koe ek he select hoga baki id subki unique hoti aur label mai bhi for attribute mai use hoti aur label tag yaha kaam aese aara h ki ager  hum class X aur class XII mai click bhi krenge toh bhi radio option select ho jayega-->
+        which class are you in?<br>
+        <label for="id1">
+            class X: <input type="radio" value="class X" name="class" id="id1">
+            
+        </label>
+        <label for="id2">
+            class XII: <input type="radio" value="class XII" name="class" id="id2">
+        </label>
+        <br>
+        <h5>Your age: </h5>        
+        <label for="id3">
+            Age above 18: <input type="radio" value="Age above 18" name="first" id="id3">
+            
+        </label >
+        <label for="id4">
+            Age below 18: <input type="radio" value="Age below 18" name="first" id="id4">
+        </label>
+        <br>
+        <h5>your fav subjects:</h5>
+        
+        <label for="math">
+            Math<input type="checkbox" value="math" name="subject" id="id5">
+        </label>
+        <label for="chemistry">
+            Chemistry<input type="checkbox" value="chemistry" name="subject" id="id6">
+        </label>
+        <br>
+        <br>
+        Feedback:
+        <br><textarea name="feedback" id="id7" placeholder="please give your feedback.." rows="10" cols="10"></textarea>
+        <br>
+        select your city: 
+        <select name="city">            
+            <option value="Delhi">delhi</option>
+            <option value="mumbai">mumbai</option>
+            <option value="benguluru">benguluru</option>
+        </select>
+        <br>
+        <input type="submit" value="submit">
+        <!--ab yeh php ai likhe backend pr ya javascript mai likhey backend pr jayega-->
+        <!--iframe Tag
+            website inside website
+
+            <iframe src="link">
+
+            ab yeh hum yt pr jaake liki video ka link share krte time ek option embed ka ayega usse save krke yaha past krenge toh humari site pr wo yt video chalegi aese he website bhi kr skte but kuch kuch allowed ni hoti but humne wikipedia bhi attach ki h
+        -->
+            <hr>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dWSBJvEaTL0?si=kKiOGiE1BM560Yf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <br>
+
+            <iframe width="560" height="315" src="https://en.wikipedia.org/wiki/Main_Page"></iframe>
+
+            <br>
+            <video width="560" height="315" src="/myvideo.mp4" controls loop autoplay>My video:</video>
+            <!--yaha control: play,pause,volume yeh type k saare options deta h-
+                     loop: video khatam hote he firse shuru ka option deta h
+                     autoplay: website khulte he baar baar video khud he chalti rahegi (try to avoid using this isse user experience he kharab hoga net bhi waste hoga unka aur volumne bhi band krne aana padhega unhe uss video pr website khulte he)
+            ->
+
+
+    </form>
+
+</main>
+    
+    <footer>
+        <h5>Contact me at hello@ac.in</h5>
+    </footer>
+
+</body>
+</html>
